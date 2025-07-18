@@ -1,7 +1,4 @@
-from whiffpy import analyze
 
-# 📜 Sample code to test
-sample_code = """
 def find_max(numbers):
     max_val = numbers[0]
     for num in numbers:
@@ -22,8 +19,3 @@ result = safe_divide(largest, 0)
 
 print("Largest number:", largest)
 print("Division result:", result)
-"""
-
-report = analyze(sample_code)  # Returns a CodeReport object
-
-print(report)

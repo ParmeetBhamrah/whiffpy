@@ -6,6 +6,9 @@ authors = ["Parmeet Singh Bhamrah <parmeetbhamrah@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
+[tool.poetry.scripts]
+whiffpy = "whiffpy.cli:main"
+
 [tool.poetry.dependencies]
 python = ">=3.9"
 
