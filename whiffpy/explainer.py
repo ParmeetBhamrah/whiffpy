@@ -1,6 +1,15 @@
 import ast
 
 class CodeExplainer(ast.NodeVisitor):
+    """
+    AST-based analyzer that traverses user code and extracts
+    high-level explanations about its structure.
+
+    Attributes:
+        explanations (list): Textual descriptions of code elements found,
+                             such as loops, assignments, function calls, etc.
+    """
+
     def __init__(self):
         self.explanations = []
 
@@ -146,7 +155,19 @@ class CodeExplainer(ast.NodeVisitor):
     def generic_visit(self, node):
         super().generic_visit(node)
 
-def explain_structure(code: str) -> str:    
+def explain_structure(code: str) -> str: 
+    """
+    Analyzes Python code and returns a human-readable description
+    of its structure using AST. If the code has a syntax error, 
+    returns a helpful hint with location info.
+
+    Args:
+        code (str): Python code to analyze.
+
+    Returns:
+        str: Structural description or syntax error feedback.
+    """
+    
     tree = ast.parse(code)
     explainer = CodeExplainer()
     explainer.visit(tree)

@@ -3,6 +3,19 @@ from io import StringIO
 import traceback
 
 def run_code(code: str) -> dict:
+    """
+    Executes Python code in an isolated environment,
+    capturing standard output and any runtime errors.
+
+    Args:
+        code (str): A Python code string to execute.
+
+    Returns:
+        dict: A dictionary with two keys:
+              - 'output': Printed output from the code.
+              - 'error': Traceback or error message, if an error occurred.
+    """
+
     output_buffer = StringIO()
     error_buffer = StringIO()
 

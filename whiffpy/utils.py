@@ -41,6 +41,17 @@ ERROR_HINTS = {
 }
 
 def format_error_analysis(error_info: dict) -> str:
+    """
+    Converts a structured error dictionary into a readable error explanation.
+
+    Args:
+        error_info (dict): A dictionary containing error metadata,
+                           including type, message, line, and suggestion.
+
+    Returns:
+        str: A formatted string with the error type, location, and advice.
+    """
+
     if not error_info or not isinstance(error_info, dict):
         return "An unknown error occurred."
     
@@ -56,6 +67,17 @@ def format_error_analysis(error_info: dict) -> str:
     return explanation
 
 class CodeReport:
+    """
+    Holds the results of analyzing user code, including output,
+    structure explanation, error insights, and status messages.
+
+    Attributes:
+        output (str): Captured stdout from the code.
+        explanation (str): Structural breakdown from AST analysis.
+        status (str): Success or error summary.
+        error_analysis (str): Friendly error message, if applicable.
+    """
+
     def __init__(self, output:str, explanation:str, status: str = "No errors found", error_analysis: str = None):
         self.output = output
         self.explanation = explanation
@@ -80,5 +102,5 @@ class CodeReport:
             "output": self.output,
             "explanation": self.explanation,
             "status": self.status,
-            "error_analysis:": self.error_analysis,
+            "error_analysis": self.error_analysis,
         }

@@ -3,7 +3,19 @@ from .explainer import explain_structure
 from .error_analyzer import analyze_error
 from .utils import format_error_analysis, CodeReport
 
-def analyze(code: str) -> dict:
+def analyze(code: str) -> CodeReport:
+    """
+    Analyzes a block of Python code and returns insights about its output,
+    structure, and any errors in a readable format.
+
+    Args:
+        code (str): The Python code to analyze.
+
+    Returns:
+        CodeReport: An object containing output, structure explanation,
+                    error analysis (if any), and a status message.
+    """
+
     output_and_error = run_code(code)
     
     try:

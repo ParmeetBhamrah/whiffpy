@@ -2,6 +2,16 @@ import re
 from .utils import ERROR_HINTS
 
 def analyze_error(traceback_str: str) -> dict:
+    """
+    Interprets a Python error traceback and returns a structured, human-friendly
+    error description.
+
+    Args:
+        traceback_str (str): The raw traceback string from code execution.
+
+    Returns:
+        dict: Contains error type, message, line number, and a helpful suggestion.
+    """
 
     lines = [line for line in traceback_str.strip().split('\n') if line.strip()]
     last_line = lines[-1]
