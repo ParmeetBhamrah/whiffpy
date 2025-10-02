@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "whiffpy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Smart code explainer for Python"
 authors = ["Parmeet Singh Bhamrah <parmeetbhamrah@gmail.com>"]
 license = "MIT"
