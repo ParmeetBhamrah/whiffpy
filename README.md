@@ -14,23 +14,29 @@
 
 ## 📦 Installation  
 
-### Using Poetry (recommended for development)  
-Ensure you have **Python 3.9+** and [Poetry](https://python-poetry.org/) installed.  
+### Using pip (recommended for general usage)
 
-```sh
-# Clone the repository and install dependencies
-git clone https://github.com/your-username/whiffpy.git
-cd whiffpy
-poetry install
-````
-
-### Using pip (for general usage)
-
-If you’ve installed WhiffPy locally using pip, you can run commands directly:
+WhiffPy **v0.1.1** is available on PyPI. You can install it directly with:
 
 ```sh
 pip install whiffpy
+````
+
+After installation, run the CLI commands:
+
+```sh
 whiffpy path/to/file.py
+```
+
+### Using Poetry (for development)
+
+Ensure you have **Python 3.9+** and [Poetry](https://python-poetry.org/) installed.
+
+```sh
+# Clone the repository and install dependencies
+git clone https://github.com/ParmeetBhamrah/whiffpy.git
+cd whiffpy
+poetry install
 ```
 
 ---
@@ -119,4 +125,3 @@ LICENSE
 ## 📄 License
 
 WhiffPy is released under the **MIT License**.
-
