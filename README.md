@@ -16,7 +16,7 @@
 
 ### Using pip (recommended for general usage)
 
-WhiffPy **v0.1.1** is available on PyPI. You can install it directly with:
+WhiffPy **v0.1.2** is available on PyPI. You can install it directly with:
 
 ```sh
 pip install whiffpy
