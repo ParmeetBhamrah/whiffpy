@@ -35,6 +35,7 @@ Ensure you have **Python 3.9+** and [Poetry](https://python-poetry.org/) install
 ```sh
 # Clone the repository and install dependencies
 git clone https://github.com/ParmeetBhamrah/whiffpy.git
+git clone https://github.com/ParmeetBhamrah/whiffpy.git
 cd whiffpy
 poetry install
 ```
