@@ -71,7 +71,8 @@ class CodeExplainer(ast.NodeVisitor):
 
     def visit_Expr(self, node):
         # catch bare calls like print(...)
-        # Do not call self.visit_Call(node.value) to avoid duplicate explanations
+        if isinstance(node.value, ast.Call):
+            self.visit_Call(node.value)
         self.generic_visit(node)
 
     def visit_Call(self, node):
