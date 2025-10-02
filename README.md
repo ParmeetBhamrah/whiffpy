@@ -108,6 +108,10 @@ whiffpy/
 │── error_analyzer.py  # Traceback parsing and suggestions
 │── utils.py           # Error hints and result formatting
 examples/              # Usage examples
+README.md
+pyproject.toml
+poetry.lock
+LICENSE
 ```
 
 ---
