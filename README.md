@@ -1,5 +1,7 @@
+[![PyPI](https://img.shields.io/pypi/v/whiffpy.svg)](https://pypi.org/project/whiffpy/)
+
 # WhiffPy 🐍💨  
-**WhiffPy** is a smart Python code explainer and error analyzer designed for beginners, educators, and anyone who wants to understand Python code more deeply. It analyzes code, explains its structure in plain English, and provides actionable, friendly error messages.  
+**WhiffPy** is a smart Python code explainer and error analyzer designed for beginners, educators, and anyone who wants to understand Python code more deeply. It analyzes code, explains its structure in plain English, and provides actionable, friendly error messages.
 
 ---
 
