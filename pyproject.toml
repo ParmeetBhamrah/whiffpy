@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "whiffpy"
+version = "0.1.0"
+description = "Smart code explainer for Python"
+authors = ["Parmeet Singh Bhamrah <parmeetbhamrah@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+whiffpy = "whiffpy.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
